@@ -9,7 +9,7 @@ Use the API to view the menu of McDonald's, and in the future find locations nea
 
 ## Usage
 
-This can be used in an interpreter or in python scripts. For example, I will be using this in the WiiLink24[https://github.com/WiiLink24] revival of the Demae Channel. Grabbing the json of
+This can be used in an interpreter or in python scripts. For example, I will be using this in the (WiiLink24)[https://github.com/WiiLink24] revival of the Demae Channel. Grabbing the json of
 any menu category is super simple.
 
 ```python
