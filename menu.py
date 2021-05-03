@@ -53,7 +53,11 @@ def salad():
 	
 
 def beef():
-	food = requests.get(f"https://www.mcdonalds.com/services/mcd/categoryDetails.{region}.en-{region}.100038.true.true..false.json")
+	if region = gb:
+		food = requests.get(f"https://www.mcdonalds.com/services/mcd/categoryDetails.gb.en-gb.100038.true.true..false.json")
+	else:
+		food = requests.get(f"https://www.mcdonalds.com/services/mcd/categoryDetails.ca.en-ca.100005.true.true..false.json")
+		
 	get_json = food.json()
 	
 	result = json.dumps(get_json)
