@@ -1,6 +1,10 @@
 import json
 import requests
 
+from dotenv import load_dotenv
+
+load_dotenv()
+region = os.getenv('region')
 
 def beverages():
 	food = requests.get('https://www.mcdonalds.com/services/mcd/categoryDetails.ca.en-ca.100000.true.true..false.json')
@@ -49,7 +53,7 @@ def salad():
 	
 
 def beef():
-	food = requests.get('https://www.mcdonalds.com/services/mcd/categoryDetails.ca.en-ca.100005.true.true..false.json')
+	food = requests.get(f"https://www.mcdonalds.com/services/mcd/categoryDetails.{region}.en-{region}.100038.true.true..false.json")
 	get_json = food.json()
 	
 	result = json.dumps(get_json)
