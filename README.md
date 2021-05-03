@@ -22,7 +22,8 @@ region=ca
 ```
 
 For United States:
-```region=us
+```
+region=us
 ```
 
 For United Kingdom:
